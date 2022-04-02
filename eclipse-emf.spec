@@ -1,10 +1,10 @@
 %global _eclipsedir %{_prefix}/lib/eclipse
 %global emf_tag 666f438f84c97358ce33fd4c1f615212cdd419f9
 %global xsd_tag a5f53126aa28435e3f44bde6700372c8559127de
-%bcond_with bootstrap
+%bcond_without bootstrap
 Name:                eclipse-emf
 Version:             2.16.0
-Release:             1
+Release:             2
 Summary:             EMF and XSD Eclipse plug-ins
 License:             EPL-2.0
 URL:                 http://www.eclipse.org/modeling/emf/
@@ -153,5 +153,8 @@ done
 %endif
 
 %changelog
+* Thu Apr 7 2022 xiaoqian lv <xiaoqian@nj.iscas.ac.cn> - 2.16.0-2
+- bootstrap build
+
 * Thu Aug 27 2020 yanan li <liyanan032@huawei.com> - 2.16.0-1
 - Package init
